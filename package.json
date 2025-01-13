@@ -4,7 +4,9 @@
   "description": "an e-commerce authentication and authorization back-end",
   "main": "index.js",
   "scripts": {
-    "start": "nodemon index.js"
+    "start": "nodemon index.js",
+    "dev": "nodemon index.js",
+    "build": "echo 'No build step necessary'"
   },
   "author": "Dev Maverick",
   "license": "MIT",
