@@ -7,7 +7,7 @@ const express = require("express")
 const app = express()
 
 // port
-const port = 9897
+const port = process.env.PORT || 8080;
 
 // importing database function
 const connectDb = require("./database-config/db")
@@ -59,33 +59,7 @@ app.use ("/api/categories", categoryRoute)
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 // listening to port.......
-app.listen(9897, () => {
-    console.log("Server connected successfully");
-    
-})
+app.listen(port, () => {
+    console.log(`Server connected successfully on port ${port}`);
+});
